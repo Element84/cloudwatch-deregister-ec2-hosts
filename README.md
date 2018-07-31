@@ -4,7 +4,7 @@ This is a Lambda function, triggered by a CloudWatch event. When an EC2 instance
 
 At Element 84, we use FreeIPA, and we've provided an example CloudFormation stack to deploy the CloudWatch event, IAM role, and Lambda.
 
-Make sure your Lambda must have access to your directory server, which probably requires it to run within a VPC and have appropriate network routes available.
+Make sure your Lambda has access to your directory server, which probably requires it to run within a VPC and have appropriate network routes available.
 
 The main script can be found under `functions/freeipa/remove_host.py`
 
