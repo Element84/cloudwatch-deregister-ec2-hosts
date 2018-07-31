@@ -1,0 +1,58 @@
+# Automated deployment of resources necessary for decomissioning an EC2 instance
+Parameters:
+  ipa_server:
+    Type: String
+    Description: URL to ipa server without protocol. Uses https and will throw warnings in CloudWatch logs if connection is insecure
+  ipa_user:
+    Type: String
+    Description: User for authentication to FreeIPA server
+  ipa_pass:
+    Type: String
+    Description: Password for authentication to FreeIPA server
+    NoEcho: 'true'
+
+Type: AWS::Events::Rule
+Properties: 
+  Description: String
+  EventPattern: JSON object
+  Name: String
+  ScheduleExpression: String
+  State: String
+  Targets:
+    - Target
+
+Type: AWS::IAM::Role
+Properties: 
+  AssumeRolePolicyDocument:
+    JSON object
+  ManagedPolicyArns:
+    - String
+  MaxSessionDuration: Integer
+   Path: String
+  Policies:
+    - Policies
+  RoleName: String
+
+Type: AWS::Lambda::Function
+Properties: 
+  Code:
+    Code
+  DeadLetterConfig:
+    DeadLetterConfig
+  Description: String
+  Environment:
+    Environment
+  FunctionName: String
+  Handler: String
+  KmsKeyArn: String
+  MemorySize: Integer
+  ReservedConcurrentExecutions: Integer
+  Role: String
+  Runtime: String
+  Timeout: Integer
+  TracingConfig:
+    TracingConfig
+  VpcConfig:
+    VPCConfig
+  Tags: 
+    Resource Tag

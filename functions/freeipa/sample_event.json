@@ -1,0 +1,16 @@
+{
+  "account": "123456789012",
+  "detail": {
+    "instance-id": "i-abcd4444",
+    "state": "shutting-down"
+  },
+  "detail-type": "EC2 Instance State-change Notification",
+  "id": "36c9ac68-cd49-460b-a2fa-39754efbc425",
+  "region": "us-east-1",
+  "resources": [
+    "arn:aws:ec2:us-east-1:123456789012:instance/i-abcd4444"
+  ],
+  "source": "aws.ec2",
+  "time": "2015-11-11T21:36:16Z",
+  "version": "0"
+}
